@@ -1,4 +1,4 @@
-## Docker Rails(Mysql)実行環境
+# Docker Rails(Mysql)実行環境
   
 
 ``` bash
@@ -12,7 +12,4 @@
 ```
 $ cd backend
 $ docker-compose run web rails new . --force --database=mysql --skip-bundle
-
-
-
 
