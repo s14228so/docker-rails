@@ -3,9 +3,9 @@ RUN apt-get update -qq && \
     apt-get install -y build-essential \ 
                        libpq-dev \        
                        nodejs           
-RUN mkdir /rails 
+RUN mkdir /docker_rails
 
-ENV APP_ROOT /rails
+ENV APP_ROOT /docker_rails
 WORKDIR $APP_ROOT
 
 ADD ./Gemfile $APP_ROOT/Gemfile
