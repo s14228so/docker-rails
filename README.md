@@ -13,5 +13,5 @@
 $ cd backend
 $ docker-compose run web rails new . --force --database=mysql --skip-bundle
 $ vi config/database.yml(defaultのpasswordをpassword、defaultのhostをlocalhostからdbに編集)
-$ docker-compose build && docker-compose up
+$ docker-compose build && docker-compose up -d
 $ docker-compose run web rails db:create
